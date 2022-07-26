@@ -21,9 +21,15 @@ const AppContainer = styled.div`
 
 function App() {
   return (
-    <AppContainer>
-      <AccountBox />
-    </AppContainer>
+    <Router>
+      <div className="App">
+        <AppContainer>
+          <Routes>
+            <Route exact path="/login" element={<AccountBox />} />
+          </Routes>
+        </AppContainer>
+      </div>
+    </Router>
   );
 }
 

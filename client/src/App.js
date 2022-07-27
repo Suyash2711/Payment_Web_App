@@ -9,6 +9,8 @@ import React from "react";
 import Landing from "./components/Landing/landing.js";
 import styled from "styled-components";
 import { AccountBox } from "./components/accountBox";
+import Pricing from "./components/price/pricing.js";
+import "./App.css";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -26,6 +28,7 @@ function App() {
         <AppContainer>
           <Routes>
             <Route exact path="/login" element={<AccountBox />} />
+            <Route exact path="/price" element={<Pricing />} />
           </Routes>
         </AppContainer>
       </div>

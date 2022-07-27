@@ -1,0 +1,33 @@
+.subscriptionComponent {
+  padding: 3% 10%;
+  width: 100vw;
+}
+.subscriptionComponent h2 {
+  text-align: center;
+}
+.subscriptionComponent th:not(:first-child) div {
+  width: 100px;
+  height: 100px;
+  background: #11205c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 2% auto;
+}
+.subscriptionComponent tbody th {
+  text-align: left;
+}
+
+.subscriptionComponent thead th,
+.subscriptionComponent tr:nth-child(4) > *,
+.subscriptionComponent tr:nth-child(5) > *,
+.subscriptionComponent tr:nth-child(6) > *,
+.subscriptionComponent tr:nth-child(7) > * {
+  border: none !important;
+}
+
+.subscriptionComponent button {
+  background-color: #11205c;
+  padding: 8px 60px;
+}
